@@ -78,10 +78,9 @@ function Login() {
                     id="fePassword"
                     placeholder="Password"
                     onChange={() => {}}
-                    
                 </Col>
-              </Row>
-                </div>
+               </Row>
+              </div>
                 <Button width="300px" onClick={handleSubmit} type="submit">
                     Sign In with Email
                 </Button>
