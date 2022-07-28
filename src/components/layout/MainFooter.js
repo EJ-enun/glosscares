@@ -39,7 +39,7 @@ MainFooter.propTypes = {
 
 MainFooter.defaultProps = {
   contained: false,
-  copyright: "Made With ♡ By Team Chikitsak",
+  copyright: "GlossCare, 2022",
   menuItems: [
     {
       title: "Home",
@@ -50,15 +50,15 @@ MainFooter.defaultProps = {
       to: "#"
     },
     {
-      title: "Microsoft Azure",
+      title: "Value Statement",
       to: "#"
     },
     {
-      title: "Serverless",
+      title: "Medical Personnel",
       to: "#"
     },
     {
-      title: "Hire Us?",
+      title: "Join Us?",
       to: "#"
     }
   ]
