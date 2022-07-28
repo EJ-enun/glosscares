@@ -38,13 +38,13 @@ function Login() {
             <div className="login__container">
                 <img src={Logo} alt=""/>
                 <div className="login__text">
-                    <h3>Glosscare...Access to Doctors and Patients.</h3>
+                    <h3>Glosscare</h3>
                 </div>
                 <div>
                 <Row form>
                 {/* Email */}
                 <Col md="6" className="form-group">
-                  <label htmlFor="feEmail">Email</label>
+                  <label textAlign="left" htmlFor="feEmail">Email</label>
                   <FormInput
                     type="email"
                     id="feEmail"
@@ -56,7 +56,7 @@ function Login() {
                 </Col>
                 {/* Password */}
                 <Col md="6" className="form-group">
-                  <label htmlFor="fePassword">Password</label>
+                  <label textAlign="left" htmlFor="fePassword">Password</label>
                   <FormInput
                     type="password"
                     id="fePassword"
@@ -71,11 +71,11 @@ function Login() {
                 <Button onClick={signIn} type="submit">
                     Sign In with Email
                 </Button>
-                <label htmlFor="signUp"><a href="">Sign up with Email</a></label>
+                <label textAlign="left" htmlFor="signUp"><a href="">Sign up with Email</a></label>
                 <Button onClick={signIn} type="submit">
                     Sign In with Google
                 </Button>
-                <label htmlFor="forgotpassword"><a href="">Forgot Password</a></label>
+                <label textAlign="left" htmlFor="forgotpassword"><a href="">Forgot Password</a></label>
             </div>
         </div>
     )
