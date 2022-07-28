@@ -29,17 +29,32 @@ function Login() {
                     <h3>Sign in to GlossCare</h3>
                 </div>
                 <div>
-                <form onSubmit={this.handleSubmit}>
-                <label>
-                 Username/Email:
-                <input type="text" value={this.state.value} onChange={this.handleChange} />
-                </label>
-                <label>
-                 Password:
-                <input type="text" value={this.state.value} onChange={this.handleChange} />
-                </label>
-                <input type="submit" value="Submit" />
-                </form>
+                <Row form>
+                {/* Email */}
+                <Col md="6" className="form-group">
+                  <label htmlFor="feEmail">Email</label>
+                  <FormInput
+                    type="email"
+                    id="feEmail"
+                    placeholder="Email Address"
+                    value={user?.email}
+                    onChange={() => {}}
+                    autoComplete="email"
+                  />
+                </Col>
+                {/* Password */}
+                <Col md="6" className="form-group">
+                  <label htmlFor="fePassword">Password</label>
+                  <FormInput
+                    type="password"
+                    id="fePassword"
+                    placeholder="Password"
+                    value="Lol!DontEvenTryThis"
+                    onChange={() => {}}
+                    autoComplete="current-password"
+                  />
+                </Col>
+              </Row>
                 </div>
                 <Button onClick={signIn} type="submit">
                     Sign In with Google
