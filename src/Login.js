@@ -1,6 +1,6 @@
 import React from 'react'
 import './Login.css'
-import Logo from "./images/logos/logo.png" 
+import Logo from "./images/logos/logo.jpeg" 
 import { Button } from '@material-ui/core'
 import {auth, provider } from './firebase';
 import { actionTypes } from './reducer';
@@ -26,9 +26,9 @@ function Login() {
             <div className="login__container">
                 <img src={Logo} alt=""/>
                 <div className="login__text">
-                    <h2>Sign in to Chikitsak</h2>
+                    <h2>Sign in to GlossCare Future!</h2>
                 </div>
-
+                
                 <Button onClick={signIn} type="submit">
                     Sign in with Google
                 </Button>
