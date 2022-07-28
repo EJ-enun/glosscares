@@ -69,6 +69,10 @@ function Login() {
               </Row>
                 </div>
                 <Button onClick={signIn} type="submit">
+                    Sign In with Email
+                </Button>
+                <label htmlFor="signUp"><a href="">Sign up with Email</a></label>
+                <Button onClick={signIn} type="submit">
                     Sign In with Google
                 </Button>
                 <label htmlFor="forgotpassword"><a href="">Forgot Password</a></label>
