@@ -22,6 +22,21 @@ function Login() {
 
     // eslint-disable-next-line
     const [{user}, dispatch] = useStateValue();
+    const [email, setEmail] = useState("");
+
+    const [password, setPassword] = useState("");
+
+    function validateForm() {
+
+      return email.length > 0 && password.length > 0;
+
+    }
+
+    function handleSubmit(event) {
+
+      event.preventDefault();
+
+    }
 
     const signIn = () => {
         auth
@@ -61,18 +76,16 @@ function Login() {
                     type="password"
                     id="fePassword"
                     placeholder="Password"
-                    value="Lol!DontEvenTryThis"
                     onChange={() => {}}
-                    autoComplete="current-password"
-                  />
+                    
                 </Col>
               </Row>
                 </div>
-                <Button onClick={signIn} type="submit">
+                <Button width="300px" onClick={handleSubmit} type="submit">
                     Sign In with Email
                 </Button>
                 <label textAlign="left" htmlFor="signUp"><a href="">Sign up with Email</a></label>
-                <Button onClick={signIn} type="submit">
+                <Button width="300px" onClick={signIn} type="submit">
                     Sign In with Google
                 </Button>
                 <label textAlign="left" htmlFor="forgotpassword"><a href="">Forgot Password</a></label>
