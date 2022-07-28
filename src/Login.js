@@ -5,7 +5,20 @@ import { Button } from '@material-ui/core'
 import {auth, provider } from './firebase';
 import { actionTypes } from './reducer';
 import {useStateValue} from "./StateProvider"
-
+import {
+  Card,
+  CardHeader,
+  ListGroup,
+  ListGroupItem,
+  Row,
+  Col,
+  Form,
+  FormGroup,
+  FormInput,
+  FormSelect,
+  FormTextarea,
+  Button
+} from "shards-react";
 function Login() {
 
     // eslint-disable-next-line
