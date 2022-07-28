@@ -4,6 +4,7 @@ import Logo from "./images/logos/logo.jpeg"
 import { Button } from '@material-ui/core'
 import {auth, provider } from './firebase';
 import { actionTypes } from './reducer';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import {useStateValue} from "./StateProvider"
 import {
   Card,
