@@ -26,7 +26,7 @@ function Login() {
             <div className="login__container">
                 <img src={Logo} alt=""/>
                 <div className="login__text">
-                    <h3>Sign in to GlossCare</h3>
+                    <h3>Glosscare...Access to Doctors and Patients.</h3>
                 </div>
                 <div>
                 <Row form>
@@ -59,6 +59,7 @@ function Login() {
                 <Button onClick={signIn} type="submit">
                     Sign In with Google
                 </Button>
+                <label htmlFor="forgotpassword"><a href="">Forgot Password</a></label>
             </div>
         </div>
     )
