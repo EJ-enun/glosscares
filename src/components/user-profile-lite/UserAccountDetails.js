@@ -14,7 +14,6 @@ import {
   FormTextarea,
   Button
 } from "shards-react";
-import { auth } from 'https://www.gstatic.com/firebasejs/9.9.1/firebase-auth.js'
 import { useStateValue } from "../../StateProvider";
 
 const UserAccountDetails = ({ title }) => {
