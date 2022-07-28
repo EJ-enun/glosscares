@@ -26,11 +26,23 @@ function Login() {
             <div className="login__container">
                 <img src={Logo} alt=""/>
                 <div className="login__text">
-                    <h2>Sign in to GlossCare Future!</h2>
+                    <h3>Sign in to GlossCare</h3>
                 </div>
-                
+                <div>
+                <form onSubmit={this.handleSubmit}>
+                <label>
+                 Username/Email:
+                <input type="text" value={this.state.value} onChange={this.handleChange} />
+                </label>
+                <label>
+                 Password:
+                <input type="text" value={this.state.value} onChange={this.handleChange} />
+                </label>
+                <input type="submit" value="Submit" />
+                </form>
+                </div>
                 <Button onClick={signIn} type="submit">
-                    Sign in with Google
+                    Sign In with Google
                 </Button>
             </div>
         </div>
