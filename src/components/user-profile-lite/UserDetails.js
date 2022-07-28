@@ -68,14 +68,14 @@ UserDetails.propTypes = {
 
 UserDetails.defaultProps = {
   userDetails: {
-    name: "Dr. Vivek Kumar Singh",
+    name: "Dr. Enun Bassey Enun",
     avatar: require("./../../images/avatars/vivek.jpg"),
-    jobTitle: "Physician",
+    jobTitle: "Surgeon",
     performanceReportTitle: "Workload",
     performanceReportValue: 74,
-    metaTitle: "Ph.D | MBBS | Delhi University",
+    metaTitle: "Ph.D | MBBS | University of Lagos",
     metaValue:
-      "Demonstrated work in field of Physiology and more than 1k+ successful cases of patients!"
+      "Extremely dedicated and focused. Demonstrated work in field of Anatomy and Physiology with more than 10,000 successful cases!"
   }
 };
 
